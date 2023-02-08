@@ -147,8 +147,7 @@ config USB_ANDROID_SAMSUNG_COMPOSITE
 	help
 	   Provides SAMSUNG composite driver.
 
-<<<<<<< HEAD
-=======
+
 config USB_ANDROID_SAMSUNG_MTP
 	bool "Samsung MTP function"
 	depends on USB_G_ANDROID && !SEC_FACTORY
@@ -166,9 +165,6 @@ config USB_DUN_SUPPORT
 	  This function makes connection to acm from data router.
 	  It uses misc register.
 	  Support fops : open, close, release, read, poll, llseek, ioctl
-
->>>>>>> 3dff50236... mtp from topser
-source "drivers/usb/gadget/udc/Kconfig"
 
 #
 # USB Gadget Drivers
