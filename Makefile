@@ -325,7 +325,7 @@ ARCH		?= $(SUBARCH)
 # CROSS_COMPILE   ?= ../PLATFORM/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 
-CROSS_COMPILE=/home/physwizz/toolchains/toolchains-for-exynos-850/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILE=/home/grahame/toolchains/toolchains-for-exynos-850/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
 SRCARCH 	:= $(ARCH)
@@ -384,8 +384,7 @@ LD		= $(CROSS_COMPILE)ld
 #CC		= $(CROSS_COMPILE)gcc
 #CC    = $(srctree)/toolchain/clang/host/linux-x86/clang-r353983c/bin/clang
 # CC    = ../PLATFORM/prebuilts/clang/host/linux-x86/clang-r353983c/bin/clang
-
-CC=/home/physwizz/toolchains/toolchains-for-exynos-850/android_prebuilts_clang_host_linux-x86_clang-5484270-9.0/bin/clang
+CC		= $(srctree)/toolchain/clang/host/linux-x86/clang-r383902/bin/clang
 
 
 CPP		= $(CC) -E
